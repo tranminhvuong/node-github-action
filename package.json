@@ -1,0 +1,40 @@
+{
+  "name": "github-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "jest --coverage test/**/**.test.js --verbose --silent",
+    "test:verbose": "jest test/**.test.js --verbose",
+    "test:summary": "jest test/**.test.js --silent",
+    "coverage": "jest test/**.test.js --coverage --silent",
+    "lint": "npx eslint .",
+    "postinstall": "husky install",
+    "another-task": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tranminhvuong/node-github-action.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tranminhvuong/node-github-action/issues"
+  },
+  "homepage": "https://github.com/tranminhvuong/node-github-action#readme",
+  "dependencies": {
+    "axios": "^1.3.4",
+    "ci": "^2.2.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@types/jest": "^29.4.0",
+    "eslint": "^8.35.0",
+    "eslint-config-google": "^0.14.0",
+    "husky": "^8.0.3",
+    "jest": "^29.4.3"
+  }
+}
